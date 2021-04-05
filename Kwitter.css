@@ -40,3 +40,9 @@ body{
 	font-size: 20px;
     top: 50px;
 }
+.input_div_message_page{
+	position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+}

@@ -10,9 +10,10 @@ var firebaseConfig = {
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  user_name=localStorage.getItem("user_name");
+  user_name=localStorage.getItem("User_name");
   document.getElementById("user_name").innerHTML="Welcome "+user_name+"!";
   function addRoom(){
+    console.log("Yes");
      room_name=document.getElementById("room_name").value;
     firebase.database().ref("/").child(room_name).update({
       purpose="adding room name"
